@@ -19,6 +19,7 @@
   "homepage": "https://github.com/realityexpander/WebScraper-Project-2#readme",
   "dependencies": {
     "google-spreadsheet": "^3.0.11",
+    "nodemailer": "^6.4.17",
     "twitter": "^1.7.1"
   }
 }
