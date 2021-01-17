@@ -1,12 +1,20 @@
 const Twitter = require('twitter');
 const Sheet = require('./sheet');
+const twitterCreds = require('./twitter_creds.json');
+
+const {consumer_key, consumer_secret, access_token_key, access_token_secret}=twitterCreds;
+console.log({consumer_key, 
+  consumer_secret, 
+  access_token_key, 
+  access_token_secret
+});
 
 (async function() {
   // connect to twitter api
   const client = new Twitter({
     consumer_key: '',
     consumer_secret: '',
-    access_token_ke: '',
+    access_token_key: '',
     access_token_secret: ''
   })
   //4:48 video 2.2
@@ -27,7 +35,7 @@ const Sheet = require('./sheet');
   // })
 
   // remove quote from SS
-  await quotes[0].delete()
+  // await quotes[0].delete()
 
   console.log('Tweeted:', status)
 
