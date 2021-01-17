@@ -3,11 +3,14 @@ const Sheet = require('./sheet');
 const twitterCreds = require('./twitter_creds.json');
 
 const {consumer_key, consumer_secret, access_token_key, access_token_secret}=twitterCreds;
-console.log({consumer_key, 
+const myCreds = {consumer_key, 
   consumer_secret, 
   access_token_key, 
   access_token_secret
-});
+};
+
+// console.log(JSON.stringify(twitterCreds) == JSON.stringify(myCreds));
+
 
 (async function() {
   // connect to twitter api
@@ -18,6 +21,7 @@ console.log({consumer_key,
     access_token_secret: ''
   })
   //4:48 video 2.2
+  console.log(twitterCreds)
 
   // pull next tweet from SS // Zen Quotes
   const sheet = new Sheet()

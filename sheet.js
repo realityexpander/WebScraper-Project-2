@@ -1,5 +1,8 @@
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
+
+// Zen quotes source: https://quotabulary.com/famous-zen-quotes-about-life
+
 class Sheet {
     constructor() {
         this.doc = new GoogleSpreadsheet('1VSO2QUvvlViayMal5wHREUCU9YRwCZN1SymVXB91sPw');
