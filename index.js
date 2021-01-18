@@ -4,6 +4,14 @@ const twitterCreds = require('./twitter_creds.json');
 const sendEmail = require('./email');
 const currentDateAndTime = require('./dateTime');
 
+// Twitter Dev
+// https://developer.twitter.com/en/portal/
+
+// GCP
+// https://console.cloud.google.com/cloudscheduler?project=returnz-tester-215418
+// https://console.cloud.google.com/functions/list?project=returnz-tester-215418
+// https://console.cloud.google.com/logs/query;query=resource.type%3D%22cloud_function%22%0Aresource.labels.function_name%3D%22zen-twitter-bot%22%0Aresource.labels.region%3D%22us-central1%22?project=returnz-tester-215418
+
 const {consumer_key, consumer_secret, access_token_key, access_token_secret}=twitterCreds;
 const myCreds = {consumer_key, 
   consumer_secret, 
