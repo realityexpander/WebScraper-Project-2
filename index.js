@@ -5,6 +5,7 @@ const sendEmail = require('./email');
 const currentDateAndTime = require('./dateTime');
 
 // Twitter Dev @ZenBot19 Project: zen-quote-bot
+// https://twitter.com/ZenBot19
 // https://developer.twitter.com/en/portal/
 // https://developer.twitter.com/en/portal/dashboard
 
@@ -55,7 +56,7 @@ const myTwitterCreds = {
     if(err) {
       console.log({err})
     }
-    console.log({response})
+    // console.log({response})
   })
 
   // remove quote from SS
