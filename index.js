@@ -6,6 +6,16 @@ const currentDateAndTime = require('./dateTime');
 
 // Twitter Dev @ZenBot19
 // https://developer.twitter.com/en/portal/
+// https://developer.twitter.com/en/portal/dashboard
+
+// Sheet
+// https://docs.google.com/spreadsheets/d/1VSO2QUvvlViayMal5wHREUCU9YRwCZN1SymVXB91sPw/edit#gid=0
+
+// Twitter API
+// https://www.npmjs.com/package/twitter
+
+// Google Sheets API
+// https://www.npmjs.com/package/google-spreadsheet
 
 // GCP
 // https://console.cloud.google.com/functions/list?project=returnz-tester-215418
@@ -53,7 +63,7 @@ const myTwitterCreds = {
   console.log('Tweeted:', status)
   console.log("Current time:", currentDateAndTime())
 
-  sendEmail('realityexpander@gmail.com', 'Zen quote sent:' + status + '\n\nTime sent:' + currentDateAndTime() )
+  sendEmail('realityexpander@gmail.com', 'Zen quote sent: ' + status + '\n\nTime sent: ' + currentDateAndTime() )
 
 })()
 

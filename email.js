@@ -12,7 +12,7 @@ function sendEmail(address, message) {
   const mailOptions = {
     from: 'realityexpanderdev@gmail.com',
     to: address,
-    subject: 'Sending Email using Node.js',
+    subject: 'Notification of ZenBot activity',
     text: message
   };
 
